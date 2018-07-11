@@ -6,34 +6,47 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgrey;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url('../images/qbkls.png');
+    background-repeat: repeat;
     overflow: hidden;
+    color: #777777;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
 }
 
 textarea {
     height: 150px;
+    resize: none;
 }
 
 #header {
-    width: 80%;
+    width: 100%;
     height: 90px;
-    border-bottom: 2px solid grey;
-    padding: 0 10% 0 10%;
+    border-bottom: 2px solid #cccccc;
     line-height: 45px;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 999;
     background-color: #fff;
 }
 
+#header_content {
+    width: 960px;
+    height: 100%;
+    margin: auto;
+}
+
 #title {
     float: left;
     height: 100%;
-    background-color:turquoise;
+    background-color: #4aaaa5;
     color: #fff;
     width: 250px;
     text-align: center;
+    padding: 0 15px;
 }
 
 #navigation {
@@ -42,9 +55,13 @@ textarea {
 
 #navigation li {
     display: inline;
-    margin-right: 15px;
+    margin-left: 15px;
     padding-right: 15px;
     border-right: 1px solid grey;
+}
+
+#navigation li:last-child {
+    border-right: none;
 }
 
 #navigation li a {
@@ -54,14 +71,15 @@ textarea {
 
 #content {
     height: 60%;
-    width: 70%;
-    margin: 10% 15%;
-    padding: 1%;
+    width: 928px;
+    margin: 10% auto;
+    padding: 15px;
     background-color: #fff;
+    border: 1px solid #dddddd;
 }
 
 #content h2 {
-    color: turquoise;
+    color: #4aaaa5;
 }
 
 #content hr {
@@ -85,26 +103,75 @@ textarea {
 
 #content input, textarea {
     display: block;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     width: 100%;
 }
 
+#content input {
+    height: 25px;
+}
+
 #content #submit {
-    width: 50px;
-    padding: 2px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    background-color:#4aaaa5;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+}
+
+.portfolio-img {
+    height: 200px;
+    width: 215px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 9px;
+    margin-right: 8px;
+}
+
+.portfolio-img div {
+    height: 20%;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    margin-top: 70%;
+}
+
+.hangman {
+    background-image: url('../images/Midtown.jpeg');
+}
+
+.rpg {
+    background-image: url('../images/PortraitOne.jpg');
+}
+
+.trivia {
+    background-image: url('../images/PortraitThree.jpg');
+}
+
+.rutgers {
+    background-image: url('../images/PortraitTwo.jpg');
+}
+
+.rps {
+    background-image: url('../images/me.jpg');
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 999;
     width: 80%;
     height: 50px;
     padding: 0 10% 0 10%;
     text-align: center;
-    background-color: grey;
-    border-top: 8px solid turquoise;
-    color: lightgray;
+    background-color: #666666;
+    color: lightgrey;
+    border-top: 8px solid #4aaaa5;
     line-height: 75px;
     font-size: 12px;
 }
